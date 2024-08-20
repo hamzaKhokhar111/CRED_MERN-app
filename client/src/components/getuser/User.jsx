@@ -18,7 +18,7 @@ const User = () => {
 
   const deleteUser = async (userId) => {
     await axios
-      .delete(`http://localhost:8000/api/delete/${userId}`)
+      .delete(`https://cred-mern-app.vercel.app/api/delete/${userId}`)
       .then((respones) => {
         setUsers((prevUser) => prevUser.filter((user) => user._id !== userId));
         toast.success(respones.data.msg, { position: "top-right" });
