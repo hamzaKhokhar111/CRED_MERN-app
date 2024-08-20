@@ -24,7 +24,7 @@ const Add = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:8000/api/create", user)
+      .post("https://cred-mern-app.vercel.app/api/create", user)
       .then((response) => {
         toast.success(response.data.msg, { position: "top-right" });
         navigate("/");
