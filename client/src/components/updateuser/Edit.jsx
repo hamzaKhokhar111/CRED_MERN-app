@@ -16,7 +16,7 @@ function Edit() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/getone/${id}`)
+      .get(`https://cred-mern-app.vercel.app/api/getone/${id}`)
       .then((response) => {
         setUser(response.data); 
       })
