@@ -37,7 +37,7 @@ function Edit() {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:8000/api/update/${id}`,
+        `https://cred-mern-app.vercel.app/api/update/${id}`,
         user
       );
       toast.success(response.data.msg, { position: "top-right" });
